@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival wishing script</title>
+    <link rel="icon" href="pic-1.jpeg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 42px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Dancing Script", cursive;
+}
+.outer{
+    height: 100vh;
+    width: 100%;
+    background: orange;
+    border: 20px solid transparent;
+    border-image: url(bg1.jpeg) 30% round;
+    padding: 15px;
+    animation: blink 5s linear infinite;
+}
+
+@keyframes blink{
+    0%{
+        border-image: url(bg1.jpeg) 10% round;
+    }
+    50%{
+        border-image: url(bg1.jpeg) 15% round;
+    }
+    100%{
+        border-image: url(bg1.jpeg) 10% round;
+    }
+}
+.img{
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    animation: moveimg 5s linear infinite;
+    justify-content: left;
+    align-items: left;
+}
+@keyframes moveimg{
+    0%{
+        margin-left: 100px;
+    }
+    50%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: 100px;
+    }
+}
+.changecolor{
+    display: block;
+    animation: changeclr 1s linear infinite;
+}
+@keyframes changeclr{
+    0%{
+        color: red;
+    }
+    100%{
+        color: green;
+    }
+}
+.btn{
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 32px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    background: navy;
+    color: white;
+}
+</style>
+<body>
+<div class="outer">
+   Subhranil
+    <div class="img"><img src="pic-10.png" alt="">
+
+    </div>
+    Wishing you <span class="changecolor">Happy Janmashtami</span>
+</div>
+
+</body>
+</html>
